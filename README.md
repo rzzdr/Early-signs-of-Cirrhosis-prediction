@@ -16,13 +16,21 @@ train_df['Scaled_Age'] = scaler.fit_transform(train_df['Age'].values.reshape(-1,
 AutoGluon latest pre-release 1.0.1b20231208 with zero-shot HPO as default. The trained framework used below weighted ensemble of models. I also tried distillation and pseudo labeling but didn’t work better.
 
 0 WeightedEnsemble_L2 -0.436142 log_loss 7.002513 505.384119 0.004281 9.923933 2 True 9
+
 1 XGBoost_r89_BAG_L1 -0.441355 log_loss 0.470275 19.330144 0.470275 19.330144 1 True 6
+
 2 CatBoost_r137_BAG_L1 -0.441618 log_loss 0.138598 115.856482 0.138598 115.856482 1 True 4
+
 3 CatBoost_r50_BAG_L1 -0.442764 log_loss 0.266119 78.536804 0.266119 78.536804 1 True 8
+
 4 LightGBM_r130_BAG_L1 -0.443168 log_loss 1.180046 49.676369 1.180046 49.676369 1 True 7
+
 5 XGBoost_r33_BAG_L1 -0.451191 log_loss 3.457726 68.160608 3.457726 68.160608 1 True 3
+
 6 RandomForestEntr_BAG_L1 -0.475263 log_loss 0.428620 3.049245 0.428620 3.049245 1 True 1
+
 7 NeuralNetTorch_r79_BAG_L1 -0.482747 log_loss 0.301830 66.300480 0.301830 66.300480 1 True 2
+
 8 NeuralNetFastAI_r145_BAG_L1 -0.489281 log_loss 0.755018 94.550054 0.755018 94.550054 1 True 5
 
 ### LightAutoML
@@ -31,12 +39,17 @@ Trained the LightAutoML 0.3.8b1 version and the trained frameworked used below w
 
 [16:19:15] Model description:
 Final prediction for new objects (level 0) =
+
 0.06558 * (5 averaged models Lvl_0_Pipe_0_Mod_0_LightGBM) +
+
 0.17057 * (5 averaged models Lvl_0_Pipe_0_Mod_1_Tuned_LightGBM) +
+
 0.27900 * (5 averaged models Lvl_0_Pipe_0_Mod_2_CatBoost) +
+
 0.48485 * (5 averaged models Lvl_0_Pipe_0_Mod_3_Tuned_CatBoost)
 
 [16:19:15] ==================================================
+
 [16:19:15] Blending: optimization starts with equal weights and score -0.4164338072355177
 
 ### AutoXGB

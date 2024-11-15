@@ -1,5 +1,5 @@
 # Early signs of Cirrhosis prediction
-As hinted in this post [https://www.kaggle.com/competitions/playground-series-s3e26/discussion/461062] XGB works well in classification, and that was the base idea.
+As hinted in this [post] (https://www.kaggle.com/competitions/playground-series-s3e26/discussion/461062) XGB works well in classification, and that was the base idea.
 The key was using a stacking approach with OOF from many other different top solutions and use XGB as meta model for training the stacked predictions + orginal features. And also try not to tune and optimize every solution to much, reduce the risk of overfitting, instead use the predictions as extra features in the final stacking training.
 
 Many solutions shared the same small added feature engineering as below, rest was unchanged in terms of FE.
